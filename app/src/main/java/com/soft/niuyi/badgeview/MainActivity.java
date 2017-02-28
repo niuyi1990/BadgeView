@@ -8,7 +8,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private BadgeView mBvOne;
-    private Button mBtnAdd;
+    private Button mBtnAdd, mBtnClear;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,10 +16,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mBvOne = (BadgeView) findViewById(R.id.bv_one);
         mBtnAdd = (Button) findViewById(R.id.btn_add);
+        mBtnClear = (Button) findViewById(R.id.btn_clear);
         mBtnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mBvOne.addRedConutNumber(5);
+                mBvOne.addRedCountNumber(5);
+            }
+        });
+        mBtnClear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mBvOne.setRedCount(0);
             }
         });
     }

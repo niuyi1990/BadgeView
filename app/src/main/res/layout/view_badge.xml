@@ -30,6 +30,6 @@
         android:gravity="center"
         android:textColor="#FFFFFF"
         android:textSize="10dp"
-        android:text="1"/>
+        tools:text="0"/>
 
 </RelativeLayout>

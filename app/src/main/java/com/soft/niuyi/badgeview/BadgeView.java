@@ -29,7 +29,7 @@ public class BadgeView extends RelativeLayout {
     private TextView mTvBar;//分类文字
     private ImageView mIvBar;//分类图标
 
-    private int mMessageCount;//消息数量
+    private int mMessageCount = 0;//消息数量
 
     public BadgeView(Context context) {
         super(context);
@@ -62,6 +62,7 @@ public class BadgeView extends RelativeLayout {
         mTvBarNumber = (TextView) relativeLayout.findViewById(R.id.tv_bar_num);
         mTvBar = (TextView) relativeLayout.findViewById(R.id.tv_bar);
         mIvBar = (ImageView) relativeLayout.findViewById(R.id.iv_bar);
+        if (mMessageCount == 0) mTvBarNumber.setVisibility(View.GONE);
     }
 
     private void setAttribute() {
@@ -96,7 +97,7 @@ public class BadgeView extends RelativeLayout {
      *
      * @param increment 需要增加的数量
      */
-    public void addRedConutNumber(int increment) {
+    public void addRedCountNumber(int increment) {
         setRedCount(mMessageCount + increment);
     }
 

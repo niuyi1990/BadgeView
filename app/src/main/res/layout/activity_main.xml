@@ -13,6 +13,14 @@
         android:layout_centerInParent="true"
         android:text="点击添加"/>
 
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btn_add"
+        android:layout_centerInParent="true"
+        android:text="点击清空"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
