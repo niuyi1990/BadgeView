@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:text="点击添加"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <com.soft.niuyi.badgeview.BadgeView
+            android:id="@+id/bv_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:badgeImageIcon="@mipmap/ic_launcher"
+            app:badgeText="首页"
+            app:badgeTextColor="@android:color/black"
+            app:badgeTextSize="15sp"/>
+
+        <com.soft.niuyi.badgeview.BadgeView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:badgeImageIcon="@mipmap/ic_launcher"
+            app:badgeText="分类"
+            app:badgeTextColor="@android:color/black"
+            app:badgeTextSize="15sp"/>
+
+        <com.soft.niuyi.badgeview.BadgeView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:badgeImageIcon="@mipmap/ic_launcher"
+            app:badgeText="消息"
+            app:badgeTextColor="@android:color/black"
+            app:badgeTextSize="15sp"/>
+
+        <com.soft.niuyi.badgeview.BadgeView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:badgeImageIcon="@mipmap/ic_launcher"
+            app:badgeText="我的"
+            app:badgeTextColor="@android:color/black"
+            app:badgeTextSize="15sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
