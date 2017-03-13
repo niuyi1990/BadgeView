@@ -1,30 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     android:id="@+id/activity_main"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btn_add"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_centerInParent="true"
-        android:text="点击添加"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
-    <Button
-        android:id="@+id/btn_clear"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_below="@+id/btn_add"
-        android:layout_centerInParent="true"
-        android:text="点击清空"/>
+    <!--<Button-->
+    <!--android:id="@+id/btn_add"-->
+    <!--android:layout_width="150dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:text="点击添加"/>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_clear"-->
+    <!--android:layout_width="150dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_below="@+id/btn_add"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:text="点击清空"/>-->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:background="@android:color/white"
         android:orientation="horizontal">
 
@@ -33,38 +39,41 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:badgeImageIcon="@mipmap/ic_launcher"
+            app:badgeImageIcon="@drawable/tab_home"
             app:badgeText="首页"
             app:badgeTextColor="@android:color/black"
             app:badgeTextSize="15sp"/>
 
         <com.soft.niuyi.badgeview.BadgeView
+            android:id="@+id/bv_two"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:badgeImageIcon="@mipmap/ic_launcher"
+            app:badgeImageIcon="@drawable/tab_classify"
             app:badgeText="分类"
             app:badgeTextColor="@android:color/black"
             app:badgeTextSize="15sp"/>
 
         <com.soft.niuyi.badgeview.BadgeView
+            android:id="@+id/bv_three"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:badgeImageIcon="@mipmap/ic_launcher"
+            app:badgeImageIcon="@drawable/tab_cart"
             app:badgeText="消息"
             app:badgeTextColor="@android:color/black"
             app:badgeTextSize="15sp"/>
 
         <com.soft.niuyi.badgeview.BadgeView
+            android:id="@+id/bv_four"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:badgeImageIcon="@mipmap/ic_launcher"
+            app:badgeImageIcon="@drawable/tab_mine"
             app:badgeText="我的"
             app:badgeTextColor="@android:color/black"
             app:badgeTextSize="15sp"/>
 
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>
