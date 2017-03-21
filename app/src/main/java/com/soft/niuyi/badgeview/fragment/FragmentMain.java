@@ -1,4 +1,4 @@
-package com.soft.niuyi.badgeview;
+package com.soft.niuyi.badgeview.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -6,7 +6,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+
+import com.soft.niuyi.badgeview.R;
 
 /**
  * 作者：${牛毅}
@@ -16,11 +17,8 @@ import android.widget.TextView;
  */
 public class FragmentMain extends Fragment {
 
-    private TextView textview;
-
-    public static FragmentMain newInstance(String pager) {
+    public static FragmentMain newInstance() {
         Bundle args = new Bundle();
-        args.putString("pager", pager);
         FragmentMain fragment = new FragmentMain();
         fragment.setArguments(args);
         return fragment;
@@ -29,16 +27,8 @@ public class FragmentMain extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = LayoutInflater.from(container.getContext()).inflate(R.layout.fragment_main, null);
-        textview = (TextView) view.findViewById(R.id.textview);
+        View view = inflater.inflate(R.layout.fragment_main, container,false);
         return view;
     }
 
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        Bundle arguments = getArguments();
-        String pager = arguments.getString("pager");
-        textview.setText(pager);
-    }
 }

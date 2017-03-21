@@ -1,4 +1,4 @@
-package com.soft.niuyi.badgeview;
+package com.soft.niuyi.badgeview.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -9,6 +9,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.soft.niuyi.badgeview.DensityUtil;
+import com.soft.niuyi.badgeview.R;
 
 /**
  * 作者：${牛毅}

@@ -2,7 +2,7 @@
 自定义带有角标小红点数字的View
 #布局文件可直接使用
 
-        <com.soft.niuyi.badgeview.BadgeView
+        <com.soft.niuyi.badgeview.view.BadgeView
             android:id="@+id/bv_one"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

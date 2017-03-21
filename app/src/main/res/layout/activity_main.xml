@@ -7,34 +7,21 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewpager"
+    <FrameLayout
+        android:id="@+id/rl_main"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"/>
-
-    <!--<Button-->
-    <!--android:id="@+id/btn_add"-->
-    <!--android:layout_width="150dp"-->
-    <!--android:layout_height="50dp"-->
-    <!--android:layout_centerInParent="true"-->
-    <!--android:text="点击添加"/>-->
-
-    <!--<Button-->
-    <!--android:id="@+id/btn_clear"-->
-    <!--android:layout_width="150dp"-->
-    <!--android:layout_height="50dp"-->
-    <!--android:layout_below="@+id/btn_add"-->
-    <!--android:layout_centerInParent="true"-->
-    <!--android:text="点击清空"/>-->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
 
-        <com.soft.niuyi.badgeview.BadgeView
+        <com.soft.niuyi.badgeview.view.BadgeView
             android:id="@+id/bv_one"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -44,7 +31,7 @@
             app:badgeTextColor="@android:color/black"
             app:badgeTextSize="15sp"/>
 
-        <com.soft.niuyi.badgeview.BadgeView
+        <com.soft.niuyi.badgeview.view.BadgeView
             android:id="@+id/bv_two"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -54,7 +41,7 @@
             app:badgeTextColor="@android:color/black"
             app:badgeTextSize="15sp"/>
 
-        <com.soft.niuyi.badgeview.BadgeView
+        <com.soft.niuyi.badgeview.view.BadgeView
             android:id="@+id/bv_three"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -64,7 +51,7 @@
             app:badgeTextColor="@android:color/black"
             app:badgeTextSize="15sp"/>
 
-        <com.soft.niuyi.badgeview.BadgeView
+        <com.soft.niuyi.badgeview.view.BadgeView
             android:id="@+id/bv_four"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
