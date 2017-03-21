@@ -28,8 +28,7 @@
             android:layout_weight="1"
             app:badgeImageIcon="@drawable/tab_home"
             app:badgeText="首页"
-            app:badgeTextColor="@android:color/black"
-            app:badgeTextSize="15sp"/>
+            app:badgeTextSize="10sp"/>
 
         <com.soft.niuyi.badgeview.view.BadgeView
             android:id="@+id/bv_two"
@@ -38,8 +37,7 @@
             android:layout_weight="1"
             app:badgeImageIcon="@drawable/tab_classify"
             app:badgeText="分类"
-            app:badgeTextColor="@android:color/black"
-            app:badgeTextSize="15sp"/>
+            app:badgeTextSize="10sp"/>
 
         <com.soft.niuyi.badgeview.view.BadgeView
             android:id="@+id/bv_three"
@@ -48,8 +46,7 @@
             android:layout_weight="1"
             app:badgeImageIcon="@drawable/tab_cart"
             app:badgeText="消息"
-            app:badgeTextColor="@android:color/black"
-            app:badgeTextSize="15sp"/>
+            app:badgeTextSize="10sp"/>
 
         <com.soft.niuyi.badgeview.view.BadgeView
             android:id="@+id/bv_four"
@@ -58,8 +55,7 @@
             android:layout_weight="1"
             app:badgeImageIcon="@drawable/tab_mine"
             app:badgeText="我的"
-            app:badgeTextColor="@android:color/black"
-            app:badgeTextSize="15sp"/>
+            app:badgeTextSize="10sp"/>
 
     </LinearLayout>
 

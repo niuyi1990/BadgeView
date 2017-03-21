@@ -18,7 +18,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/iv_bar"
+        android:layout_centerHorizontal="true"
         android:gravity="center"
+        android:textColor="@drawable/selector_text"
         tools:text="消息"/>
 
     <TextView
@@ -29,7 +31,6 @@
         android:layout_toRightOf="@+id/iv_bar"
         android:background="@drawable/shape_red_point_bg"
         android:gravity="center"
-        android:textColor="#FFFFFF"
         android:textSize="10dp"
         tools:text="0"/>
 

@@ -70,7 +70,7 @@ public class BadgeView extends RelativeLayout {
 
     private void setAttribute() {
         mTvBar.setText(mTextString);
-        mTvBar.setTextColor(mTextColor);
+//        mTvBar.setTextColor(mTextColor);
         mTvBar.setTextSize(DensityUtil.px2sp(mContext, mTextSize));
         mIvBar.setImageResource(mImageIconResource);
     }
